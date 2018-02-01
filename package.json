@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "deploy": "gcloud app deploy",
     "nodemon": "nodemon ./bin/www",
     "start": "node ./bin/www"
   },
