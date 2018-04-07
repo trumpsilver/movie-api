@@ -3,17 +3,21 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "deploy": "gcloud app deploy",
+    "push": "git push heroku master",
+    "open": "heroku open",
+    "deploy": "yarn push && yarn open",
     "nodemon": "nodemon ./bin/www",
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "ant-design-pro-cli": "^1.0.0",
     "axios": "^0.17.1",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.4",
     "debug": "~2.6.9",
     "express": "~4.15.5",
+    "global": "^4.3.2",
     "morgan": "~1.9.0",
     "pug": "2.0.0-beta11"
   },
